@@ -24,7 +24,7 @@ const handleSignup=()=>{
             <CustomButton 
             title='Sign-in'
             type='button'
-            containerStyle='bg-white text-blue-500'
+            containerStyle='bg-white text-blue-500 border border-2'
             />
             </div>
             </Link>
