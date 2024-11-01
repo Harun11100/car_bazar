@@ -19,14 +19,16 @@ const handleSignup=()=>{
             height={100}
             className='pt-7'/>
             </Link>
+            <Link href={'/signup'}>
+            <div>
+            <CustomButton 
+            title='Sign-in'
+            type='button'
+            containerStyle='bg-white text-blue-500'
+            />
+            </div>
+            </Link>
            
-        <div>
-        <CustomButton 
-        title='Sign-in'
-        containerStyle=''
-        handleButton={handleSignup()}
-        />
-        </div>
        
       
       </nav>
