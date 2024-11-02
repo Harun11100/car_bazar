@@ -34,9 +34,7 @@ const CarCards = ({car}:CarCardProps) => {
       const[open ,setOpen]=useState(false)
 
       const carRent=calculateCarRent(city_mpg,year)
-      const handleClick=()=>{
-
-      }
+      
       return (
     <div className='car-card group'>
 
@@ -112,7 +110,7 @@ const CarCards = ({car}:CarCardProps) => {
            containerStyle='w-full bg-primary-blue p-2'
            textStyle='text-white leading-[10px] font-bold'
            rightIcon='/right-arrow.svg'
-           handleButton={handleClick}
+           handleButton={()=>setOpen(true)}
           />
            
        </div>
