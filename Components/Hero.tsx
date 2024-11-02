@@ -16,9 +16,9 @@ const Hero = () => {
             <h1 className='hero__title'>
                   Find, book or rent or buy a car quickly and easily !
             </h1>
-            <p className='hero__subtitle'>Stramline your car rental experience with our effforless booking process</p>
+            <p className='hero__subtitle'>Stramline your car rental experience with our efforless booking process</p>
             <div className='pt-5'>
-            <CustomButton title="Explore Our Collections" handleButton={handleScroll()} containerStyle='bg-blue-700 text-white px-4 ml-6'/>
+            <CustomButton title="Explore Our Collections" handleButton={handleScroll()} containerStyle='bg-primary-blue p-3 mt-5 text-white px-4 ml-6'/>
             </div>
            
        </div>

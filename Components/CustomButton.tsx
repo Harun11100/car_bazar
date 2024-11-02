@@ -20,26 +20,10 @@ const CustomButton = ({rightIcon,containerStyle,handleButton,title,textStyle,typ
   <button
   disabled={false}
   type={'Button'}
-  className={`rounded-full cursor-pointer hover:bg-blue-800  ${containerStyle}`}
+  className={`rounded-full cursor-pointer  ${containerStyle}`}
   onClick={handleButton}>
        
        <span className={`flex-1 ${textStyle}`}>{title}</span>
-      
-      {/* {rightIcon &&
-      <div className='w-3 h-3'>
-      
-      <Image
-        src={rightIcon}
-        alt='righticon'
-        fill
-        className='object-contain'
-        />
-         </div>
-        } */}
-    
-     
-     
-       
       
   </button>
   )

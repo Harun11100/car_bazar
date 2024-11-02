@@ -25,7 +25,7 @@ export default async function Home({searchParams}:HomeProps) {
     <main className="overflow-hidden">
         <Hero/>
         <div className="mt-12 padding-x padding-y max-width" id='discover'>
-        <div className="home__text-container">
+        <div className="home__text-container ">
            <h1 className="text-4xl">
             Car Catalouge
            </h1>
@@ -42,7 +42,7 @@ export default async function Home({searchParams}:HomeProps) {
 
            </div>
 
-           {!isdataEmpty &&(
+           {!isdataEmpty ?(
             <section>
               <div className="home__cars-wrapper">
              {allCars?.map(car=>(
@@ -51,7 +51,10 @@ export default async function Home({searchParams}:HomeProps) {
 
               </div>
             </section>
-           )}
+           ):<div className="home__error-container">
+           Sorry ! No cars to show , Try again
+
+         </div>}
 
         </div>
     </main>
