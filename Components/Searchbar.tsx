@@ -15,7 +15,7 @@ const Searchbar = () => {
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (manufacturer === '' && model === '') {
+    if (manufacturer.trim() === '' && model.trim() === '') {
       return alert('Please fill in the searchbar');
     }
 
@@ -61,7 +61,7 @@ const Searchbar = () => {
         />
         <input
           type="text"
-          name="label"
+          name="model"
           value={model}
           onChange={(e) => setModel(e.target.value)}
           placeholder="Nexus"
