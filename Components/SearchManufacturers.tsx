@@ -1,7 +1,7 @@
 'use client';
 import React, { Fragment, useState } from 'react';
-import { Checkbox, Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions, Transition } from '@headlessui/react';
-import Image from 'next/image';
+import { Checkbox, Combobox, ComboboxInput, ComboboxOption, ComboboxOptions, Transition } from '@headlessui/react';
+
 import { manufacturers as manufacturerList } from '@/constants';
 
 interface SearchManufacturersProps {
@@ -23,11 +23,9 @@ const SearchManufacturers = ({ manufacturer, setManufacturer }: SearchManufactur
     <div className="search-manufacturers">
       <Combobox value={manufacturer} onChange={setManufacturer}>
         <div className="relative w-full">
-          <ComboboxButton className="absolute top-[20px]">
-            <Image src="/car-logo.svg" alt="car-logo" width={20} height={20} className='' />
-          </ComboboxButton>
+        
           <ComboboxInput
-            className="search-manufacturers__input"
+            className=" search-manufacturer__input "
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Lamborgini"
             displayValue={(manufacturer: string) => manufacturer}
