@@ -6,9 +6,7 @@ import Image from 'next/image'
 
 
 const Hero = () => {
-      const handleScroll=()=>{
-
-      }
+   
   return (
     <div className='hero'>
      
@@ -18,7 +16,7 @@ const Hero = () => {
             </h1>
             <p className='hero__subtitle'>Stramline your car rental experience with our efforless booking process</p>
             <div className='pt-5'>
-            <CustomButton title="Explore Our Collections" handleButton={handleScroll()} containerStyle='bg-primary-blue p-3 mt-5 text-white px-4 ml-6'/>
+            <CustomButton title="Explore Our Collections"  containerStyle='bg-primary-blue p-3 mt-5 text-white px-4 ml-6'/>
             </div>
            
        </div>
